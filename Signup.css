@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+*,
+*::after,
+*::before {
+  --thirtyNine: #ffcb39;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.cards {
+  transform: translate(0);
+  border-radius: 18px;
+  font-size: 30rem;
+  margin: 4rem 0 0 18rem;
+  display: flex;
+  justify-content: center;
+  height: 62rem;
+  width: 100rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  animation: slideToRight 2s ease-out;
+  animation: dancemonkey 10s ease-in-out infinite alternate 3s;
+}
+
+/* --------Text sizes,colors and positions------- */
+::selection {
+  background-color: #fde195;
+  color: #fff;
+}
+.font-size {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.heading {
+  font-family: "Montserrat", sans-serif;
+}
+/* -----Left Section----- */
+.cards-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 18px 0 0 18px;
+  height: 100%;
+  width: 50%;
+  background-color: var(--thirtyNine);
+  padding: 2rem;
+}
+.back:link,
+.back:visited {
+  position: absolute;
+  top: 1rem;
+  left: 1.4rem;
+  color: #222;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 2.2rem;
+  font-family: Montserrat, sans-serif;
+}
+.what {
+  margin: 0.7rem 0;
+  margin-bottom: 3.4rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #222;
+}
+.feedback {
+  margin-top: 1.6rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+  width: 35rem;
+}
+
+.feed {
+  margin-bottom: 6rem;
+  line-height: 2;
+  color: #222;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.7rem;
+}
+.cards-left .heading {
+  color: #222;
+}
+.cards-left .text {
+  color: #222;
+  font-size: 1.8rem;
+}
+/* -----End of Left Section----- */
+
+/* -----Right Section----- */
+.cards-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 0 18px 18px 0px;
+  height: 100%;
+  width: 50%;
+  background-color: #555;
+  padding: 0.4rem 2rem;
+  position: relative;
+}
+.logo {
+  margin: 1.3rem 41%;
+  width: 8rem;
+  animation: wiggle 3.5s infinite 0s alternate;
+}
+.cards-right .heading {
+  color: var(--thirtyNine);
+  margin-bottom: 1.5rem;
+}
+.cards-right .text {
+  color: #fff;
+}
+.input {
+  margin-bottom: 1.5rem;
+  outline: none;
+  width: 16rem;
+  height: 3.7rem;
+  border-style: none;
+  border-radius: 1rem;
+  padding: 0.2rem 1rem;
+}
+.input:focus {
+  border: 2.5px solid var(--thirtyNine);
+}
+.inputBox {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.defineinput {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.cta:visited,
+.cta:link {
+  text-decoration: none;
+  margin-top: 3rem;
+  margin-left: 8.5rem;
+  padding: 8px 16px;
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+  transition: all 0.1s;
+}
+.cta:active {
+  transform: scale(0.95);
+}
+.already-p {
+  margin-right: 0.4rem;
+  color: #fff;
+}
+.already {
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  display: inline-block;
+}
+.login {
+  color: var(--thirtyNine);
+}
+/* -----End of Right Section----- */
+
+/* ---------keyframes--------- */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(5deg) scale(1);
+  }
+  92.5% {
+    transform: rotate(-5deg);
+  }
+  95% {
+    transform: rotate(5deg);
+  }
+  97.5% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg) scale(1.04);
+  }
+}
